@@ -1,0 +1,11 @@
+CONTRIBUTING.md
+LICENSE
+Dockerfile
+.git
+.gitignore
+.travis.yml
+.vscode
+Procfile
+README.md
+docker_build.sh
+docker_run.sh
