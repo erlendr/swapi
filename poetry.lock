@@ -95,7 +95,7 @@ description = "JSONField for django models"
 name = "django-jsonfield"
 optional = false
 python-versions = "*"
-version = "0.9.13"
+version = "1.0.1"
 
 [[package]]
 category = "main"
@@ -309,7 +309,7 @@ python-versions = "*"
 version = "0.1.2"
 
 [metadata]
-content-hash = "783286937491452f4e190198bc154554d3eec127aeb9b2e1bed4766f377a57ef"
+content-hash = "29ca53e7913ae42d03d330c2ccba22b6f954f3baf806913f87ddfba0699798d1"
 python-versions = "^2.7"
 
 [metadata.files]
@@ -349,7 +349,7 @@ django-heroku-memcacheify = [
     {file = "django_heroku_memcacheify-1.0.0-py2.py3-none-any.whl", hash = "sha256:971c63f9af5bee2884bbfd308457b6675b35b89a33cf42c1c4f0a554c324a563"},
 ]
 django-jsonfield = [
-    {file = "django-jsonfield-0.9.13.tar.gz", hash = "sha256:12ae3dd4543f8dc5cc5f4bdd7f6fd168f4d1624414d753a441573ccc187a8e43"},
+    {file = "django-jsonfield-1.0.1.tar.gz", hash = "sha256:6c0afd5554739365b55d86e285cf966cc3a45682fff963463364ea1f6511ca3e"},
 ]
 django-markdown-deux = [
     {file = "django-markdown-deux-1.0.5.zip", hash = "sha256:5b4a3cd9454af5b4cec0e19151b41d98d09400ddae0688afb81dbf62a4edafff"},
