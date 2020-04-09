@@ -9,5 +9,5 @@ jobs:
       - run: sudo apt-get install libmemcached-dev
       - run: sudo pip install --upgrade pip
       - run: sudo pip install pipenv
-      - run: sudo make install
-      - run: make test
+      - run: sudo pipenv install --deploy --system
+      - run: python manage.py test
