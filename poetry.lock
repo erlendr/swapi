@@ -28,7 +28,7 @@ description = "A high-level Python Web framework that encourages rapid developme
 name = "django"
 optional = false
 python-versions = "*"
-version = "1.8.19"
+version = "1.9.13"
 
 [package.extras]
 bcrypt = ["bcrypt"]
@@ -291,7 +291,7 @@ python-versions = "*"
 version = "0.1.2"
 
 [metadata]
-content-hash = "a5027cab232d364395ce08356150971b8cb28c3e0d8915354181d77376b6fc38"
+content-hash = "6fba39502f4a9b966768166f9e62d4cdab91459a34814d7aa357236abb0462d1"
 python-versions = "^2.7"
 
 [metadata.files]
@@ -308,8 +308,8 @@ dj-database-url = [
     {file = "dj_database_url-0.5.0-py2.py3-none-any.whl", hash = "sha256:851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"},
 ]
 django = [
-    {file = "Django-1.8.19-py2.py3-none-any.whl", hash = "sha256:674c525d3aa90ed683313b64aa27490c31874e16155e6b44772d84e76c83c46c"},
-    {file = "Django-1.8.19.tar.gz", hash = "sha256:33d44a5cf9d333247a9a374ae1478b78b83c9b78eb316fc04adde62053b4c047"},
+    {file = "Django-1.9.13-py2.py3-none-any.whl", hash = "sha256:c213590aa8599b17a9a914ab017f7dc6fc16c9c69603ecf071100346b8d9d777"},
+    {file = "Django-1.9.13.tar.gz", hash = "sha256:c007dba5086061f7d0f4d88a3bc4016d881a7eede86d6c1c4fdbbaadddd53f1d"},
 ]
 django-braces = [
     {file = "django-braces-1.13.0.tar.gz", hash = "sha256:ba68e98b817c6f01d71d10849f359979617b3fe4cefb7f289adefddced092ddc"},

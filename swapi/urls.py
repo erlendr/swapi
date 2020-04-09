@@ -21,7 +21,7 @@ router.register(r"starships", views.StarshipViewSet)
 
 
 urlpatterns = [
-    url(r"^admin/", include(admin.site.urls)),
+    url(r"^admin/", admin.site.urls),
     url(r"^$", swapi.views.index),
     url(r"^documentation$", swapi.views.documentation),
     url(r"^about$", swapi.views.about),

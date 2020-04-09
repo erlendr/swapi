@@ -11,7 +11,13 @@ SECRET_KEY = os.environ.get(
 
 DEBUG = bool(os.environ.get('DEBUG', True))
 
-TEMPLATE_DEBUG = DEBUG
+TEMPLATES = [
+    {
+        'OPTIONS': {
+            'debug': DEBUG
+        }
+    }
+]
 
 ALLOWED_HOSTS = []
 
