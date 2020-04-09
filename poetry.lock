@@ -43,7 +43,10 @@ description = "A high-level Python Web framework that encourages rapid developme
 name = "django"
 optional = false
 python-versions = "*"
-version = "1.7.4"
+version = "1.8.19"
+
+[package.extras]
+bcrypt = ["bcrypt"]
 
 [[package]]
 category = "main"
@@ -145,7 +148,7 @@ description = "Web APIs for Django, made easy."
 name = "djangorestframework"
 optional = false
 python-versions = "*"
-version = "3.0.0"
+version = "3.5.4"
 
 [[package]]
 category = "main"
@@ -306,7 +309,7 @@ python-versions = "*"
 version = "0.1.2"
 
 [metadata]
-content-hash = "781f42a6c6aa17547beb4f4ab2502bff075f00dac892419ff1e1c6118f17a5c1"
+content-hash = "c9785da95f266f8b074b244a7a846618eea0976df435b4327e8e71fc87dd4f55"
 python-versions = "^2.7"
 
 [metadata.files]
@@ -327,8 +330,8 @@ dj-stripe = [
     {file = "dj_stripe-0.3.5-py2.py3-none-any.whl", hash = "sha256:09b780aad1c232ddf921ab054e0d1c2c2576bc455fe9bfafc17240e98d6544ed"},
 ]
 django = [
-    {file = "Django-1.7.4-py2.py3-none-any.whl", hash = "sha256:42002065cc98bc99b5bae0084ddb13a0ad611a171dcdaf5ba96731935da744a4"},
-    {file = "Django-1.7.4.tar.gz", hash = "sha256:f33255afbb9ee0977d9095ab0b50fde1f8ddff4220b57e8d19c6620b3e316170"},
+    {file = "Django-1.8.19-py2.py3-none-any.whl", hash = "sha256:674c525d3aa90ed683313b64aa27490c31874e16155e6b44772d84e76c83c46c"},
+    {file = "Django-1.8.19.tar.gz", hash = "sha256:33d44a5cf9d333247a9a374ae1478b78b83c9b78eb316fc04adde62053b4c047"},
 ]
 django-braces = [
     {file = "django-braces-1.4.0.tar.gz", hash = "sha256:536a0dab62b30c54165b191b95bc7a84be5bf901f7b43f9fbf5655ad2fcf4a9e"},
@@ -361,7 +364,8 @@ django-pylibmc = [
     {file = "django_pylibmc-0.6.1-py2.py3-none-any.whl", hash = "sha256:9cffdee703aaf9ebc029d9dbdee8abdd0723564b95e4b2ac59e4a668b8e58f93"},
 ]
 djangorestframework = [
-    {file = "djangorestframework-3.0.0.tar.gz", hash = "sha256:8c10804339580a7111af56ad32edc1914afcf640a870ced113a7c2155baa90f0"},
+    {file = "djangorestframework-3.5.4-py2.py3-none-any.whl", hash = "sha256:110afa12784ceadfb50808882689302d266785b51e3d13286744333ff6d78e60"},
+    {file = "djangorestframework-3.5.4.tar.gz", hash = "sha256:f995a35ae22f354d2a9a42ee6d2c059c101f826b1485ed46781677895ad25ee5"},
 ]
 drf-json-api = [
     {file = "drf-json-api-0.1.1.tar.gz", hash = "sha256:8a9172148f1566746dd900d62c7a39cefe5ea0600eba7407adf3f3b3a14c7038"},
