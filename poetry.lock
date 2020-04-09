@@ -244,7 +244,7 @@ description = "Radically simplified static file serving for WSGI applications"
 name = "whitenoise"
 optional = false
 python-versions = "*"
-version = "1.0.3"
+version = "3.3.1"
 
 [[package]]
 category = "main"
@@ -255,7 +255,7 @@ python-versions = "*"
 version = "0.1.2"
 
 [metadata]
-content-hash = "560715c4712df57688040ff91f3ff57fb335a1b017704210f2b3de1171510dad"
+content-hash = "5fc51015e30f5baae02e10bc82166c7ca1a82a6b522c287507ec16a9c492ff79"
 python-versions = "^2.7"
 
 [metadata.files]
@@ -370,8 +370,8 @@ stripe = [
     {file = "stripe-1.19.1.tar.gz", hash = "sha256:46fe901ef2903be28cc1a36ddb9d8fd0ef627be6fff85f7f84840f800548de7b"},
 ]
 whitenoise = [
-    {file = "whitenoise-1.0.3-py2.py3-none-any.whl", hash = "sha256:27400465b1976aba4d27fbc876b80390eb03876f41b44db7eecb74c5382d508f"},
-    {file = "whitenoise-1.0.3.tar.gz", hash = "sha256:d2e16a8224859eb12012a9fa99ac1aef4278f0a36173fefd616cdb2aeb6b87e7"},
+    {file = "whitenoise-3.3.1-py2.py3-none-any.whl", hash = "sha256:15f43b2e701821b95c9016cf469d29e2a546cb1c7dead584ba82c36f843995cf"},
+    {file = "whitenoise-3.3.1.tar.gz", hash = "sha256:9d81515f2b5b27051910996e1e860b1332e354d9e7bcf30c98f21dcb6713e0dd"},
 ]
 wsgiref = [
     {file = "wsgiref-0.1.2-py2.3.egg", hash = "sha256:5e41d89a25465ec65f0f8caf09a2225cf71cfa78b208418177fc2a9420eb51f2"},
