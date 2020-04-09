@@ -154,7 +154,7 @@ description = "A parser and renderer for Django REST Framework that adds support
 name = "drf-json-api"
 optional = false
 python-versions = "*"
-version = "0.1.0"
+version = "0.1.1"
 
 [[package]]
 category = "main"
@@ -307,7 +307,7 @@ python-versions = "*"
 version = "0.1.2"
 
 [metadata]
-content-hash = "85dc61f822325659db3ee6a7223b5d5176a951de639c419202f7a5c87d61959e"
+content-hash = "08559ad3e617ae7a5cbb10753389e135e513edef2ef42f25870d0ba9ed3f737b"
 python-versions = "^2.7"
 
 [metadata.files]
@@ -363,8 +363,8 @@ djangorestframework = [
     {file = "djangorestframework-3.0.0.tar.gz", hash = "sha256:8c10804339580a7111af56ad32edc1914afcf640a870ced113a7c2155baa90f0"},
 ]
 drf-json-api = [
-    {file = "drf-json-api-0.1.0.tar.gz", hash = "sha256:b395ffb588ec2980f7a57a71598f12aee4288c5b08d2f472be90e8af7d6ac87c"},
-    {file = "drf_json_api-0.1.0-py2.py3-none-any.whl", hash = "sha256:de74886895bee8c85ecaab3a9c83b624eaf6efbd4d3d0c6e01479e84e6d95a94"},
+    {file = "drf-json-api-0.1.1.tar.gz", hash = "sha256:8a9172148f1566746dd900d62c7a39cefe5ea0600eba7407adf3f3b3a14c7038"},
+    {file = "drf_json_api-0.1.1-py2.py3-none-any.whl", hash = "sha256:2039018ef2037609bea58a68404c2f552b491a14e996a8d34244665984488092"},
 ]
 gunicorn = [
     {file = "gunicorn-19.10.0-py2.py3-none-any.whl", hash = "sha256:c3930fe8de6778ab5ea716cab432ae6335fa9f03b3f2c3e02529214c476f4bcb"},
