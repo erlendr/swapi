@@ -16,7 +16,7 @@ docker_build:
 	python manage.py collectstatic --noinput
 
 load_data:
-	poetry run python manage.py loamakddata planets.json
+	poetry run python manage.py loaddata planets.json
 	poetry run python manage.py loaddata people.json
 	poetry run python manage.py loaddata species.json
 	poetry run python manage.py loaddata transport.json
