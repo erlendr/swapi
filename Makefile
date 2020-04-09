@@ -1,4 +1,8 @@
 
+setup:
+	pip install --upgrade pip
+	pip install pipenv
+
 install:
 	pipenv install
 
@@ -6,14 +10,27 @@ build:
 	pipenv run python manage.py migrate
 	pipenv run python manage.py createsuperuser
 
+docker_build:
+	python manage.py migrate
+	python manage.py collectstatic --noinput
+
 load_data:
-	pipenv run python manage.py loaddata planets.json
+	pipenv run python manage.py loamakddata planets.json
 	pipenv run python manage.py loaddata people.json
 	pipenv run python manage.py loaddata species.json
 	pipenv run python manage.py loaddata transport.json
 	pipenv run python manage.py loaddata starships.json
 	pipenv run python manage.py loaddata vehicles.json
 	pipenv run python manage.py loaddata films.json
+
+docker_load_data:
+	python manage.py loaddata planets.json
+	python manage.py loaddata people.json
+	python manage.py loaddata species.json
+	python manage.py loaddata transport.json
+	python manage.py loaddata starships.json
+	python manage.py loaddata vehicles.json
+	python manage.py loaddata films.json
 
 serve:
 	pipenv run python manage.py runserver

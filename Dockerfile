@@ -6,14 +6,14 @@ RUN apt-get update && apt-get install -y libmemcached-dev --force-yes
 WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install pipenv
-COPY requirements.txt /app/
+COPY Pipfile /app/
+COPY Pipfile.lock /app/
 
 RUN pipenv install --deploy --system
 COPY . /app/
 
-RUN make build
-RUN make load_data
-RUN pipenv run python manage.py collectstatic --noinput
+RUN make docker_build
+RUN make docker_load_data
 COPY . /app/
 
 EXPOSE 8000

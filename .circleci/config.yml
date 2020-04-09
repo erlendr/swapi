@@ -7,5 +7,7 @@ jobs:
       - checkout
       - run: sudo apt-get update
       - run: sudo apt-get install libmemcached-dev
-      - run: sudo pip install -r requirements.txt
+      - run: sudo pip install --upgrade pip
+      - run: sudo pip install pipenv
+      - run: sudo make install
       - run: make test
