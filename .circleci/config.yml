@@ -13,4 +13,4 @@ jobs:
       - run: sudo pip install poetry
       - run: sudo poetry check
       - run: sudo poetry install
-      - run: poetry run python manage.py test
+      - run: sudo poetry run python manage.py test
