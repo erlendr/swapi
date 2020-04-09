@@ -1,3 +1,4 @@
+from memcacheify import memcacheify
 import os
 import dj_database_url
 
@@ -9,8 +10,6 @@ SECRET_KEY = os.environ.get(
 )
 
 DEBUG = bool(os.environ.get('DEBUG', True))
-# Because test settings will trigger KEEN.io hits
-KEEN_DEBUG = bool(os.environ.get('DEBUG', True))
 
 TEMPLATE_DEBUG = DEBUG
 
@@ -63,7 +62,7 @@ USE_L10N = True
 USE_TZ = True
 
 if not DEBUG:
-    DATABASES['default'] =  dj_database_url.config()
+    DATABASES['default'] = dj_database_url.config()
 
     DATABASES['default']['ENGINE'] = 'django_postgrespool'
 
@@ -124,13 +123,6 @@ REST_FRAMEWORK = {
     )
 }
 
-# Keen.io
-
-KEEN_PROJECT_ID = os.environ.get('KEEN_PROJECT_ID', '')
-KEEN_WRITE_KEY = os.environ.get('KEEN_WRITE_KEY', '')
-KEEN_READ_KEY = os.environ.get('KEEN_READ_KEY', '')
-KEEN_CELERY = False
-
 # Stripe
 
 STRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY', '')
@@ -140,12 +132,12 @@ STRIPE_TEST_PUBLISHABLE_KEY = os.environ.get('STRIPE_TEST_PUBLISHABLE_KEY', '')
 
 if DEBUG:
     STRIPE_KEYS = {
-        "secret" :STRIPE_TEST_SECRET_KEY,
+        "secret": STRIPE_TEST_SECRET_KEY,
         "publishable": STRIPE_TEST_PUBLISHABLE_KEY
     }
 else:
     STRIPE_KEYS = {
-        "secret" :STRIPE_SECRET_KEY,
+        "secret": STRIPE_SECRET_KEY,
         "publishable": STRIPE_PUBLISHABLE_KEY
     }
 
@@ -154,12 +146,11 @@ else:
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_URLS_REGEX = r'^/api/.*$'
 CORS_ALLOW_METHODS = (
-        'GET',
-    )
+    'GET',
+)
 
 # Memcache
 
-from memcacheify import memcacheify
 
 CACHES = memcacheify()
 

@@ -71,8 +71,6 @@ def stripe_donation(request):
 @login_required
 def stats(request):
     data = {}
-    data['keen_project_id'] = settings.KEEN_PROJECT_ID
-    data['keen_read_key'] = settings.KEEN_READ_KEY
     return render_to_response(
         'stats.html',
         data
