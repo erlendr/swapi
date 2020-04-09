@@ -2,6 +2,9 @@
 name = "swapi"
 version = "1.0.0"
 description = "swapi"
+authors = [
+    "Paul Hallett"
+]
 
 [tool.poetry.dependencies]
 python = "^2.7"
