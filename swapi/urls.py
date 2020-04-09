@@ -1,11 +1,11 @@
 from __future__ import unicode_literals
 import resources.schemas
 import swapi.views
+from resources import views
 from rest_framework import routers
 
 from django.conf.urls import url, include
 from django.contrib import admin
-from resources import views
 admin.autodiscover()
 
 
