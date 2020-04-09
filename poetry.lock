@@ -26,19 +26,6 @@ python-versions = "*"
 version = "3.0.4"
 
 [[package]]
-category = "dev"
-description = "Updated configparser from Python 3.7 for Python 2.6+."
-marker = "python_version < \"3.2\""
-name = "configparser"
-optional = false
-python-versions = ">=2.6"
-version = "4.0.2"
-
-[package.extras]
-docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2)", "pytest-flake8", "pytest-black-multipy"]
-
-[[package]]
 category = "main"
 description = "Use Database URLs in your Django Application."
 name = "dj-database-url"
@@ -52,7 +39,10 @@ description = "A high-level Python Web framework that encourages rapid developme
 name = "django"
 optional = false
 python-versions = "*"
-version = "1.10.8"
+version = "1.11.29"
+
+[package.dependencies]
+pytz = "*"
 
 [package.extras]
 argon2 = ["argon2-cffi (>=16.1.0)"]
@@ -173,20 +163,6 @@ optional = false
 python-versions = ">=2.7"
 version = "0.3"
 
-[package.dependencies]
-[package.dependencies.configparser]
-python = ">=2.7,<2.8"
-version = ">=3.5"
-
-[[package]]
-category = "dev"
-description = "Python 3.4 Enum backported to 3.3, 3.2, 3.1, 2.7, 2.6, 2.5, and 2.4"
-marker = "python_version < \"3.4\""
-name = "enum34"
-optional = false
-python-versions = "*"
-version = "1.1.10"
-
 [[package]]
 category = "dev"
 description = "the modular source code checker: pep8, pyflakes and co"
@@ -200,31 +176,6 @@ entrypoints = ">=0.3.0,<0.4.0"
 mccabe = ">=0.6.0,<0.7.0"
 pycodestyle = ">=2.5.0,<2.6.0"
 pyflakes = ">=2.1.0,<2.2.0"
-
-[package.dependencies.configparser]
-python = "<3.2"
-version = "*"
-
-[package.dependencies.enum34]
-python = "<3.4"
-version = "*"
-
-[package.dependencies.functools32]
-python = "<3.2"
-version = "*"
-
-[package.dependencies.typing]
-python = "<3.5"
-version = "*"
-
-[[package]]
-category = "dev"
-description = "Backport of the functools module from Python 3.2.3 for use on 2.7 and PyPy."
-marker = "python_version < \"3.2\""
-name = "functools32"
-optional = false
-python-versions = "*"
-version = "3.2.3-2"
 
 [[package]]
 category = "main"
@@ -313,6 +264,14 @@ version = "1.6.1"
 
 [[package]]
 category = "main"
+description = "World timezone definitions, modern and historical"
+name = "pytz"
+optional = false
+python-versions = "*"
+version = "2019.3"
+
+[[package]]
+category = "main"
 description = "Python HTTP for Humans."
 name = "requests"
 optional = false
@@ -367,18 +326,8 @@ version = "2.45.0"
 
 [package.dependencies]
 [package.dependencies.requests]
-extras = ["security"]
-python = "<3.0"
+python = ">=3.0"
 version = ">=2.20"
-
-[[package]]
-category = "dev"
-description = "Type Hints for Python"
-marker = "python_version < \"3.5\""
-name = "typing"
-optional = false
-python-versions = "*"
-version = "3.7.4.1"
 
 [[package]]
 category = "main"
@@ -410,8 +359,8 @@ python-versions = "*"
 version = "0.1.2"
 
 [metadata]
-content-hash = "1c9b3d0ca3a7f198484ffa24f3fc171153b391248fc24a3a5c49276cc7739322"
-python-versions = "^2.7"
+content-hash = "0210160b58fe37224a942e9cdf08cb8593fa553878f010508e865574735f5ed4"
+python-versions = "^3.7"
 
 [metadata.files]
 autopep8 = [
@@ -425,17 +374,13 @@ chardet = [
     {file = "chardet-3.0.4-py2.py3-none-any.whl", hash = "sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"},
     {file = "chardet-3.0.4.tar.gz", hash = "sha256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"},
 ]
-configparser = [
-    {file = "configparser-4.0.2-py2.py3-none-any.whl", hash = "sha256:254c1d9c79f60c45dfde850850883d5aaa7f19a23f13561243a050d5a7c3fe4c"},
-    {file = "configparser-4.0.2.tar.gz", hash = "sha256:c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df"},
-]
 dj-database-url = [
     {file = "dj-database-url-0.5.0.tar.gz", hash = "sha256:4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163"},
     {file = "dj_database_url-0.5.0-py2.py3-none-any.whl", hash = "sha256:851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"},
 ]
 django = [
-    {file = "Django-1.10.8-py2.py3-none-any.whl", hash = "sha256:ffdc7e938391ae3c2ee8ff82e0b4444e4e6bb15c99d00770285233d42aaf33d6"},
-    {file = "Django-1.10.8.tar.gz", hash = "sha256:d4ef83bd326573c00972cb9429beb396d210341a636e4b816fc9b3f505c498bb"},
+    {file = "Django-1.11.29-py2.py3-none-any.whl", hash = "sha256:014e3392058d94f40569206a24523ce254d55ad2f9f46c6550b0fe2e4f94cf3f"},
+    {file = "Django-1.11.29.tar.gz", hash = "sha256:4200aefb6678019a0acf0005cd14cfce3a5e6b9b90d06145fcdd2e474ad4329c"},
 ]
 django-braces = [
     {file = "django-braces-1.13.0.tar.gz", hash = "sha256:ba68e98b817c6f01d71d10849f359979617b3fe4cefb7f289adefddced092ddc"},
@@ -481,18 +426,9 @@ entrypoints = [
     {file = "entrypoints-0.3-py2.py3-none-any.whl", hash = "sha256:589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19"},
     {file = "entrypoints-0.3.tar.gz", hash = "sha256:c70dd71abe5a8c85e55e12c19bd91ccfeec11a6e99044204511f9ed547d48451"},
 ]
-enum34 = [
-    {file = "enum34-1.1.10-py2-none-any.whl", hash = "sha256:a98a201d6de3f2ab3db284e70a33b0f896fbf35f8086594e8c9e74b909058d53"},
-    {file = "enum34-1.1.10-py3-none-any.whl", hash = "sha256:c3858660960c984d6ab0ebad691265180da2b43f07e061c0f8dca9ef3cffd328"},
-    {file = "enum34-1.1.10.tar.gz", hash = "sha256:cce6a7477ed816bd2542d03d53db9f0db935dd013b70f336a95c73979289f248"},
-]
 flake8 = [
     {file = "flake8-3.7.9-py2.py3-none-any.whl", hash = "sha256:49356e766643ad15072a789a20915d3c91dc89fd313ccd71802303fd67e4deca"},
     {file = "flake8-3.7.9.tar.gz", hash = "sha256:45681a117ecc81e870cbf1262835ae4af5e7a8b08e40b944a8a6e6b895914cfb"},
-]
-functools32 = [
-    {file = "functools32-3.2.3-2.tar.gz", hash = "sha256:f6253dfbe0538ad2e387bd8fdfd9293c925d63553f5813c4e587745416501e6d"},
-    {file = "functools32-3.2.3-2.zip", hash = "sha256:89d824aa6c358c421a234d7f9ee0bd75933a67c29588ce50aaa3acdf4d403fa0"},
 ]
 gunicorn = [
     {file = "gunicorn-19.10.0-py2.py3-none-any.whl", hash = "sha256:c3930fe8de6778ab5ea716cab432ae6335fa9f03b3f2c3e02529214c476f4bcb"},
@@ -546,6 +482,10 @@ pylibmc = [
     {file = "pylibmc-1.6.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:e6c0c452336db0868d0de521d48872c2a359b1233b974c6b32c36ce68abc4820"},
     {file = "pylibmc-1.6.1.tar.gz", hash = "sha256:8a8dd406487d419d58c6d944efd91e8189b360a0c4d9e8c6ebe3990d646ae7e9"},
 ]
+pytz = [
+    {file = "pytz-2019.3-py2.py3-none-any.whl", hash = "sha256:1c557d7d0e871de1f5ccd5833f60fb2550652da6be2693c1e02300743d21500d"},
+    {file = "pytz-2019.3.tar.gz", hash = "sha256:b02c06db6cf09c12dd25137e563b31700d3b80fcc4ad23abb7a315f2789819be"},
+]
 requests = [
     {file = "requests-2.23.0-py2.py3-none-any.whl", hash = "sha256:43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee"},
     {file = "requests-2.23.0.tar.gz", hash = "sha256:b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6"},
@@ -560,11 +500,6 @@ sqlalchemy = [
 stripe = [
     {file = "stripe-2.45.0-py2.py3-none-any.whl", hash = "sha256:2592aa78aa8fbd2c7b892edd9eb0b5dd987df60000e156b1fe395c44ac46f1c0"},
     {file = "stripe-2.45.0.tar.gz", hash = "sha256:8382f1429487ba641e9d8348db32c1d7b235b7de9129f235a668eef2131147fa"},
-]
-typing = [
-    {file = "typing-3.7.4.1-py2-none-any.whl", hash = "sha256:c8cabb5ab8945cd2f54917be357d134db9cc1eb039e59d1606dc1e60cb1d9d36"},
-    {file = "typing-3.7.4.1-py3-none-any.whl", hash = "sha256:f38d83c5a7a7086543a0f649564d661859c5146a85775ab90c0d2f93ffaa9714"},
-    {file = "typing-3.7.4.1.tar.gz", hash = "sha256:91dfe6f3f706ee8cc32d38edbbf304e9b7583fb37108fef38229617f8b3eba23"},
 ]
 urllib3 = [
     {file = "urllib3-1.25.8-py2.py3-none-any.whl", hash = "sha256:2f3db8b19923a873b3e5256dc9c2dedfa883e33d87c690d9c7913e1f40673cdc"},
