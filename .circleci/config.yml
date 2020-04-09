@@ -11,5 +11,5 @@ jobs:
       - run: sudo apt-get install libmemcached-dev
       - run: sudo pip install --upgrade pip
       - run: sudo pip install poetry
-      - run: sudo poetry install --deploy --system
+      - run: sudo poetry install
       - run: python manage.py test
