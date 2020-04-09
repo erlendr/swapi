@@ -162,7 +162,7 @@ description = "Padding methods for password based encryption"
 name = "padding"
 optional = false
 python-versions = "*"
-version = "0.4"
+version = "0.5"
 
 [[package]]
 category = "main"
@@ -243,7 +243,7 @@ python-versions = "*"
 version = "0.1.2"
 
 [metadata]
-content-hash = "2ce589fa9e5ba7c535849fa00ea02f761a7218bb2f711b71e5c6414969a827b6"
+content-hash = "ac84f76e44b6ebe9ffc6abcfd1738498af0156e1ac66cd87413ce2cd5f88a4b1"
 python-versions = "^2.7"
 
 [metadata.files]
@@ -302,7 +302,7 @@ markdown2 = [
     {file = "markdown2-2.3.0.zip", hash = "sha256:c8e29ba47a0e408bb92df75d5c6361c84268c54c5320d53ffd4961c546f77f1c"},
 ]
 padding = [
-    {file = "Padding-0.4.tar.gz", hash = "sha256:7edb82139e1de6eb973f742d07751ee386b40c61259ed233b5bfe0bdf485a32a"},
+    {file = "Padding-0.5.tar.gz", hash = "sha256:8994b4d8720b733ddf697bc27ce17b672220c48c4a37eef1e7eaa30a4ad90308"},
 ]
 psycopg2 = [
     {file = "psycopg2-2.7.2-cp26-cp26m-manylinux1_i686.whl", hash = "sha256:ea51262c8841ac640c6c71697945e87aa5dcf28c2ebb5c75747066bdb759e801"},
