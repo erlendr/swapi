@@ -15,6 +15,7 @@ from .renderers import WookieeRenderer
 
 import json
 
+
 class TestAllEndpoints(TestCase):
     """ Test ALL the endpoints """
     fixtures = [
@@ -50,7 +51,7 @@ class TestAllEndpoints(TestCase):
 
         list_response = self.get_query("/api/people/")
         list_data = json.loads(list_response.content)
-        self.assertLess(json_data["count"],list_data["count"])
+        self.assertLess(json_data["count"], list_data["count"])
         self.assertEqual(person.name, json_data["results"][0]["name"])
 
     def test_planets_root(self):
@@ -69,7 +70,7 @@ class TestAllEndpoints(TestCase):
 
         list_response = self.get_query("/api/planets/")
         list_data = json.loads(list_response.content)
-        self.assertLess(json_data["count"],list_data["count"])
+        self.assertLess(json_data["count"], list_data["count"])
         self.assertEqual(planet.name, json_data["results"][0]["name"])
 
     def test_films_root(self):
@@ -88,7 +89,7 @@ class TestAllEndpoints(TestCase):
 
         list_response = self.get_query("/api/films/")
         list_data = json.loads(list_response.content)
-        self.assertLess(json_data["count"],list_data["count"])
+        self.assertLess(json_data["count"], list_data["count"])
         self.assertEqual(film.title, json_data["results"][0]["title"])
 
     def test_starships_root(self):
@@ -107,7 +108,7 @@ class TestAllEndpoints(TestCase):
 
         list_response = self.get_query("/api/starships/")
         list_data = json.loads(list_response.content)
-        self.assertLess(json_data["count"],list_data["count"])
+        self.assertLess(json_data["count"], list_data["count"])
         self.assertEqual(ship.name, json_data["results"][0]["name"])
 
     def test_vehicles_root(self):
@@ -126,7 +127,7 @@ class TestAllEndpoints(TestCase):
 
         list_response = self.get_query("/api/vehicles/")
         list_data = json.loads(list_response.content)
-        self.assertLess(json_data["count"],list_data["count"])
+        self.assertLess(json_data["count"], list_data["count"])
         self.assertEqual(vehicle.name, json_data["results"][0]["name"])
 
     def test_species_root(self):
@@ -145,7 +146,7 @@ class TestAllEndpoints(TestCase):
 
         list_response = self.get_query("/api/species/")
         list_data = json.loads(list_response.content)
-        self.assertLess(json_data["count"],list_data["count"])
+        self.assertLess(json_data["count"], list_data["count"])
         self.assertEqual(species.name, json_data["results"][0]["name"])
 
     def test_people_detail(self):

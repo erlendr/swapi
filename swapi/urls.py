@@ -1,14 +1,13 @@
 from __future__ import unicode_literals
-
-from django.conf.urls import patterns, url, include
-from django.contrib import admin
-admin.autodiscover()
-
+import resources.schemas
+import swapi.views
 from rest_framework import routers
 
+from django.conf.urls import url, include
+from django.contrib import admin
 from resources import views
-import swapi.views
-import resources.schemas
+admin.autodiscover()
+
 
 router = routers.DefaultRouter()
 

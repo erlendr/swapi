@@ -13,6 +13,7 @@ DEBUG = bool(os.environ.get('DEBUG', True))
 
 TEMPLATES = [
     {
+        'DIRS': os.path.join(BASE_DIR, 'templates'),
         'OPTIONS': {
             'debug': DEBUG
         }
@@ -127,7 +128,8 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': (
         'rest_framework.filters.SearchFilter',
     ),
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'DEFAULT_PAGINATION_CLASS':
+        'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 10
 }
 

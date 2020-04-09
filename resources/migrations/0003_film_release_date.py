@@ -15,7 +15,9 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='film',
             name='release_date',
-            field=models.DateField(default=django.utils.datetime_safe.date.today),
+            field=models.DateField(
+                default=django.utils.datetime_safe.date.today
+            ),
             preserve_default=False,
         ),
     ]

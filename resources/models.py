@@ -69,7 +69,11 @@ class People(DateTimeModel):
 
     gender = models.CharField(max_length=40, blank=True)
 
-    homeworld = models.ForeignKey(Planet, related_name="residents", on_delete=models.CASCADE)
+    homeworld = models.ForeignKey(
+        Planet,
+        related_name="residents",
+        on_delete=models.CASCADE
+    )
 
 
 class Transport(DateTimeModel):
@@ -148,7 +152,8 @@ class Species(DateTimeModel):
 
     average_lifespan = models.CharField(max_length=40)
 
-    homeworld = models.ForeignKey(Planet, blank=True, null=True, on_delete=models.CASCADE)
+    homeworld = models.ForeignKey(
+        Planet, blank=True, null=True, on_delete=models.CASCADE)
 
     language = models.CharField(max_length=40)
 
@@ -202,4 +207,3 @@ class Film(DateTimeModel):
         related_name="films",
         blank=True
     )
-

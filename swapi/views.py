@@ -61,7 +61,7 @@ def stripe_donation(request):
                 currency='usd',
                 description='SWAPI donation'
             )
-        except:
+        except Exception:
             pass
 
         return redirect('/')

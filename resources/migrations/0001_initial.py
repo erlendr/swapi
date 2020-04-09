@@ -13,7 +13,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Film',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(
+                    verbose_name='ID',
+                    serialize=False,
+                    auto_created=True,
+                    primary_key=True)
+                 ),
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('edited', models.DateTimeField(auto_now=True)),
                 ('title', models.CharField(max_length=100)),
@@ -30,7 +35,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='People',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(
+                    verbose_name='ID',
+                    serialize=False,
+                    auto_created=True,
+                    primary_key=True)
+                 ),
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('edited', models.DateTimeField(auto_now=True)),
                 ('name', models.CharField(max_length=100)),
@@ -50,7 +60,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Planet',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(
+                    verbose_name='ID',
+                    serialize=False,
+                    auto_created=True,
+                    primary_key=True)
+                 ),
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('edited', models.DateTimeField(auto_now=True)),
                 ('name', models.CharField(max_length=100)),
@@ -71,7 +86,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Species',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(
+                    verbose_name='ID',
+                    serialize=False,
+                    auto_created=True,
+                    primary_key=True)
+                 ),
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('edited', models.DateTimeField(auto_now=True)),
                 ('name', models.CharField(max_length=40)),
@@ -83,8 +103,13 @@ class Migration(migrations.Migration):
                 ('eye_colors', models.CharField(max_length=200)),
                 ('average_lifespan', models.CharField(max_length=40)),
                 ('language', models.CharField(max_length=40)),
-                ('homeworld', models.ForeignKey(to='resources.Planet', blank=True, on_delete=models.CASCADE)),
-                ('people', models.ManyToManyField(related_name='species', to='resources.People')),
+                ('homeworld', models.ForeignKey(
+                    to='resources.Planet',
+                    blank=True,
+                    on_delete=models.CASCADE)
+                 ),
+                ('people', models.ManyToManyField(
+                    related_name='species', to='resources.People')),
             ],
             options={
                 'abstract': False,
@@ -94,7 +119,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Transport',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(
+                    verbose_name='ID',
+                    serialize=False,
+                    auto_created=True,
+                    primary_key=True)
+                 ),
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('edited', models.DateTimeField(auto_now=True)),
                 ('name', models.CharField(max_length=40)),
@@ -116,7 +146,14 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Starship',
             fields=[
-                ('transport_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='resources.Transport', on_delete=models.CASCADE)),
+                ('transport_ptr', models.OneToOneField(
+                    parent_link=True,
+                    auto_created=True,
+                    primary_key=True,
+                    serialize=False,
+                    to='resources.Transport',
+                    on_delete=models.CASCADE)
+                 ),
                 ('hyperdrive_rating', models.CharField(max_length=40)),
                 ('MGLT', models.CharField(max_length=40)),
                 ('starship_class', models.CharField(max_length=40)),
@@ -129,7 +166,14 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Vehicle',
             fields=[
-                ('transport_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='resources.Transport', on_delete=models.CASCADE)),
+                ('transport_ptr', models.OneToOneField(
+                    parent_link=True,
+                    auto_created=True,
+                    primary_key=True,
+                    serialize=False,
+                    to='resources.Transport',
+                    on_delete=models.CASCADE)
+                 ),
                 ('vehicle_class', models.CharField(max_length=40)),
             ],
             options={
@@ -140,43 +184,52 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='transport',
             name='pilots',
-            field=models.ManyToManyField(related_name='transport', to='resources.People'),
+            field=models.ManyToManyField(
+                related_name='transport', to='resources.People'),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='people',
             name='homeworld',
-            field=models.ForeignKey(related_name='residents', to='resources.Planet', on_delete=models.CASCADE),
+            field=models.ForeignKey(
+                related_name='residents',
+                to='resources.Planet',
+                on_delete=models.CASCADE),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='film',
             name='characters',
-            field=models.ManyToManyField(related_name='films', to='resources.People'),
+            field=models.ManyToManyField(
+                related_name='films', to='resources.People'),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='film',
             name='planets',
-            field=models.ManyToManyField(related_name='films', to='resources.Planet'),
+            field=models.ManyToManyField(
+                related_name='films', to='resources.Planet'),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='film',
             name='species',
-            field=models.ManyToManyField(related_name='films', to='resources.Species'),
+            field=models.ManyToManyField(
+                related_name='films', to='resources.Species'),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='film',
             name='starships',
-            field=models.ManyToManyField(related_name='films', to='resources.Starship'),
+            field=models.ManyToManyField(
+                related_name='films', to='resources.Starship'),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='film',
             name='vehicles',
-            field=models.ManyToManyField(related_name='films', to='resources.Vehicle'),
+            field=models.ManyToManyField(
+                related_name='films', to='resources.Vehicle'),
             preserve_default=True,
         ),
     ]

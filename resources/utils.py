@@ -9,6 +9,7 @@ from .models import (
     Starship,
 )
 
+
 def get_resource_stats():
     return {
         'people': People.objects.count(),

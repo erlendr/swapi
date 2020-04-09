@@ -77,7 +77,7 @@ class VehicleViewSet(viewsets.ReadOnlyModelViewSet):
 
     queryset = Vehicle.objects.all()
     serializer_class = VehicleSerializer
-    search_fields = ('name','model',)
+    search_fields = ('name', 'model', )
 
     def retrieve(self, request, *args, **kwargs):
         return super(VehicleViewSet, self).retrieve(request, *args, **kwargs)
@@ -90,7 +90,7 @@ class StarshipViewSet(viewsets.ReadOnlyModelViewSet):
 
     queryset = Starship.objects.all()
     serializer_class = StarshipSerializer
-    search_fields = ('name','model',)
+    search_fields = ('name', 'model',)
 
     def retrieve(self, request, *args, **kwargs):
         return super(StarshipViewSet, self).retrieve(request, *args, **kwargs)
