@@ -5,9 +5,7 @@ jobs:
       - image: circleci/python:2.7.13
     steps:
       - checkout
-      - run:
-          command: |
-            sudo pip install -r requirements.txt
-      - run:
-          command: |
-            make test
+      - run: sudo apt-get update
+      - run: sudo apt-get install libmemcached-dev
+      - run: sudo pip install -r requirements.txt
+      - run: make test
