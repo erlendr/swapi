@@ -20,22 +20,7 @@ description = "Use Database URLs in your Django Application."
 name = "dj-database-url"
 optional = false
 python-versions = "*"
-version = "0.3.0"
-
-[[package]]
-category = "main"
-description = "Django + Stripe Made Easy"
-name = "dj-stripe"
-optional = false
-python-versions = "*"
-version = "0.3.5"
-
-[package.dependencies]
-django = ">=1.4"
-django-braces = ">=1.2.1"
-django-jsonfield = ">=0.9.10"
-django-model-utils = ">=1.4.0"
-stripe = ">=1.9.2"
+version = "0.5.0"
 
 [[package]]
 category = "main"
@@ -306,7 +291,7 @@ python-versions = "*"
 version = "0.1.2"
 
 [metadata]
-content-hash = "b0b75a79a7db5161eb510df3d074c6fbd34bc28fca80c93891b1e4628b9d9cb8"
+content-hash = "a5027cab232d364395ce08356150971b8cb28c3e0d8915354181d77376b6fc38"
 python-versions = "^2.7"
 
 [metadata.files]
@@ -319,12 +304,8 @@ chardet = [
     {file = "chardet-3.0.4.tar.gz", hash = "sha256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"},
 ]
 dj-database-url = [
-    {file = "dj-database-url-0.3.0.tar.gz", hash = "sha256:f2e273ed34acbb560962d5cf12917936d8df02297df09bd3089b8546d4584138"},
-    {file = "dj_database_url-0.3.0-py2.py3-none-any.whl", hash = "sha256:ca01768fdecde134301f3170743226f60edff5c3935f12437378ebd911506353"},
-]
-dj-stripe = [
-    {file = "dj-stripe-0.3.5.tar.gz", hash = "sha256:f5e56b060c157caf90c39c3901a708896dffb122beaa3e9638a2e8f7eef11f01"},
-    {file = "dj_stripe-0.3.5-py2.py3-none-any.whl", hash = "sha256:09b780aad1c232ddf921ab054e0d1c2c2576bc455fe9bfafc17240e98d6544ed"},
+    {file = "dj-database-url-0.5.0.tar.gz", hash = "sha256:4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163"},
+    {file = "dj_database_url-0.5.0-py2.py3-none-any.whl", hash = "sha256:851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"},
 ]
 django = [
     {file = "Django-1.8.19-py2.py3-none-any.whl", hash = "sha256:674c525d3aa90ed683313b64aa27490c31874e16155e6b44772d84e76c83c46c"},
