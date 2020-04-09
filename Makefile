@@ -4,6 +4,9 @@ setup:
 	pip install poetry
 	brew install libmemcached
 
+update_deps:
+	poetry update
+
 install:
 	poetry install
 
