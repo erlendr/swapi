@@ -161,8 +161,13 @@ category = "main"
 description = "WSGI HTTP Server for UNIX"
 name = "gunicorn"
 optional = false
-python-versions = "*"
-version = "19.1.1"
+python-versions = ">=2.6, !=3.0.*, !=3.1.*"
+version = "19.10.0"
+
+[package.extras]
+eventlet = ["eventlet (>=0.9.7)"]
+gevent = ["gevent (>=0.13)"]
+tornado = ["tornado (>=0.2)"]
 
 [[package]]
 category = "main"
@@ -178,7 +183,7 @@ description = "A fast and complete Python implementation of Markdown"
 name = "markdown2"
 optional = false
 python-versions = "*"
-version = "2.3.0"
+version = "2.3.8"
 
 [[package]]
 category = "main"
@@ -302,7 +307,7 @@ python-versions = "*"
 version = "0.1.2"
 
 [metadata]
-content-hash = "e4cc4914de57e1ad822a51a1df14f58bb30e1394e9a918143b5874ededaaa093"
+content-hash = "85dc61f822325659db3ee6a7223b5d5176a951de639c419202f7a5c87d61959e"
 python-versions = "^2.7"
 
 [metadata.files]
@@ -362,15 +367,16 @@ drf-json-api = [
     {file = "drf_json_api-0.1.0-py2.py3-none-any.whl", hash = "sha256:de74886895bee8c85ecaab3a9c83b624eaf6efbd4d3d0c6e01479e84e6d95a94"},
 ]
 gunicorn = [
-    {file = "gunicorn-19.1.1-py2.py3-none-any.whl", hash = "sha256:ffb411757de374d05c759c929908d2397c66e3bcf6f35dee41a6ef9eb851497b"},
-    {file = "gunicorn-19.1.1.tar.gz", hash = "sha256:82715511fb6246fad4ba66d812eb93416ae8371b464fa88bf3867c9c177daa14"},
+    {file = "gunicorn-19.10.0-py2.py3-none-any.whl", hash = "sha256:c3930fe8de6778ab5ea716cab432ae6335fa9f03b3f2c3e02529214c476f4bcb"},
+    {file = "gunicorn-19.10.0.tar.gz", hash = "sha256:f9de24e358b841567063629cd0a656b26792a41e23a24d0dcb40224fc3940081"},
 ]
 idna = [
     {file = "idna-2.9-py2.py3-none-any.whl", hash = "sha256:a068a21ceac8a4d63dbfd964670474107f541babbd2250d61922f029858365fa"},
     {file = "idna-2.9.tar.gz", hash = "sha256:7588d1c14ae4c77d74036e8c22ff447b26d0fde8f007354fd48a7814db15b7cb"},
 ]
 markdown2 = [
-    {file = "markdown2-2.3.0.zip", hash = "sha256:c8e29ba47a0e408bb92df75d5c6361c84268c54c5320d53ffd4961c546f77f1c"},
+    {file = "markdown2-2.3.8-py2.py3-none-any.whl", hash = "sha256:882d3607fc023cdea0ac2cd0e1147617fcb0361cb1133d3ff095417f995ff270"},
+    {file = "markdown2-2.3.8.tar.gz", hash = "sha256:7ff88e00b396c02c8e1ecd8d176cfa418fb01fe81234dcea77803e7ce4f05dbe"},
 ]
 padding = [
     {file = "Padding-0.5.tar.gz", hash = "sha256:8994b4d8720b733ddf697bc27ce17b672220c48c4a37eef1e7eaa30a4ad90308"},
