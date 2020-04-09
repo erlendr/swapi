@@ -3,11 +3,13 @@ jobs:
   build:
     docker:
       - image: circleci/python:2.7.13
+    environment:
+      POETRY_VIRTUALENVS_CREATE: "false"
     steps:
       - checkout
       - run: sudo apt-get update
       - run: sudo apt-get install libmemcached-dev
       - run: sudo pip install --upgrade pip
-      - run: sudo pip install pipenv
-      - run: sudo pipenv install --deploy --system
+      - run: sudo pip install poetry
+      - run: sudo poetry install --deploy --system
       - run: python manage.py test

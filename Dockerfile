@@ -1,15 +1,14 @@
-FROM python:2.7.13
+FROM python:2.7.17-buster
 
-RUN apt-key adv --keyserver hkp://pool.sks-keyservers.net:80 --recv-keys 9D6D8F6BC857C906 AA8E81B4331F7F50 7638D0442B90D010 7638D0442B90D010
-RUN apt-get update && apt-get install -y libmemcached-dev --force-yes
+RUN apt-get update && apt-get install -y libmemcached-dev
 
 WORKDIR /app
 RUN pip install --upgrade pip
-RUN pip install pipenv
-COPY Pipfile /app/
-COPY Pipfile.lock /app/
+RUN pip install poetry
+COPY poetry.lock /app/
+COPY pyproject.toml /app/
 
-RUN pipenv install --deploy --system
+RUN POETRY_VIRTUALENVS_CREATE=false poetry install --ansi --no-interaction
 COPY . /app/
 
 RUN make docker_build
