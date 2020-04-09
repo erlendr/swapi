@@ -235,8 +235,8 @@ category = "main"
 description = "Python 2 and 3 compatibility utilities"
 name = "six"
 optional = false
-python-versions = "*"
-version = "1.8.0"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "1.14.0"
 
 [[package]]
 category = "main"
@@ -302,7 +302,7 @@ python-versions = "*"
 version = "0.1.2"
 
 [metadata]
-content-hash = "6feebe20dae4f17abf26437d04413e885e76ace9003a2bf6c8eb741439c99065"
+content-hash = "4a86feb30994de04f8e8aeef3cf250114e64da42f61e690bd6b2cb83103c8a33"
 python-versions = "^2.7"
 
 [metadata.files]
@@ -419,8 +419,8 @@ requests = [
     {file = "requests-2.23.0.tar.gz", hash = "sha256:b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6"},
 ]
 six = [
-    {file = "six-1.8.0-py2.py3-none-any.whl", hash = "sha256:facfe0c7cceafd49e8f7e472111294566605fdfddc23011da06cc3a4601c9f7d"},
-    {file = "six-1.8.0.tar.gz", hash = "sha256:047bbbba41bac37c444c75ddfdf0573dd6e2f1fbd824e6247bb26fa7d8fa3830"},
+    {file = "six-1.14.0-py2.py3-none-any.whl", hash = "sha256:8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c"},
+    {file = "six-1.14.0.tar.gz", hash = "sha256:236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a"},
 ]
 sqlalchemy = [
     {file = "SQLAlchemy-1.3.16.tar.gz", hash = "sha256:7224e126c00b8178dfd227bc337ba5e754b197a3867d33b9f30dc0208f773d70"},
