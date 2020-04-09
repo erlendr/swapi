@@ -210,7 +210,7 @@ description = "Quick and small memcached client for Python"
 name = "pylibmc"
 optional = false
 python-versions = "*"
-version = "1.4.1"
+version = "1.6.1"
 
 [[package]]
 category = "main"
@@ -302,7 +302,7 @@ python-versions = "*"
 version = "0.1.2"
 
 [metadata]
-content-hash = "4a86feb30994de04f8e8aeef3cf250114e64da42f61e690bd6b2cb83103c8a33"
+content-hash = "dbdc283654ba4dc1fc037bc1c410d5028a11f6da8eea1e89f8af4246eb3f107b"
 python-versions = "^2.7"
 
 [metadata.files]
@@ -412,7 +412,11 @@ pycrypto = [
     {file = "pycrypto-2.6.1.tar.gz", hash = "sha256:f2ce1e989b272cfcb677616763e0a2e7ec659effa67a88aa92b3a65528f60a3c"},
 ]
 pylibmc = [
-    {file = "pylibmc-1.4.1.tar.gz", hash = "sha256:a00e75f5c76e573e95ac5b29cb8a816728930f29332c49c74dbfd326d598088f"},
+    {file = "pylibmc-1.6.1-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:01a7e2e3fa9fcd7a791c7818a80a07e7a381aee988a5d810a1c1e6f7a9a288fd"},
+    {file = "pylibmc-1.6.1-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:6fff384e3c30af029bbac87f88b3fab14ae87b50103d389341d9b3e633349a3f"},
+    {file = "pylibmc-1.6.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:c749b4251c1137837d00542b62992b96cd2aed639877407f66291120dd6de2ff"},
+    {file = "pylibmc-1.6.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:e6c0c452336db0868d0de521d48872c2a359b1233b974c6b32c36ce68abc4820"},
+    {file = "pylibmc-1.6.1.tar.gz", hash = "sha256:8a8dd406487d419d58c6d944efd91e8189b360a0c4d9e8c6ebe3990d646ae7e9"},
 ]
 requests = [
     {file = "requests-2.23.0-py2.py3-none-any.whl", hash = "sha256:43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee"},
