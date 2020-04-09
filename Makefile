@@ -3,6 +3,11 @@ setup:
 	pip install --upgrade pip
 	pip install poetry
 	brew install libmemcached
+	brew install libpq
+	
+	# https://stackoverflow.com/questions/26288042/error-installing-psycopg2-library-not-found-for-lssl 
+	brew install openssl 
+	brew link openssl --force
 
 update_deps:
 	poetry update
