@@ -39,10 +39,16 @@ class WookieeRenderer(renderers.JSONRenderer):
         encoded_data = super(WookieeRenderer, self).render(
             data, media_type, renderer_context
         )
-        return bytes(self.translate_to_wookie(encoded_data))
+        return bytes(self.translate_to_wookie(encoded_data), encoding='utf8')
 
     def translate_to_wookie(self, data):
         translated_data = ""
+
+        try:
+            data = data.decode("utf-8")
+        except (UnicodeDecodeError, AttributeError):
+            pass
+
         for char in data:
             if char in self.lookup:
                 translated_data += self.lookup[char]

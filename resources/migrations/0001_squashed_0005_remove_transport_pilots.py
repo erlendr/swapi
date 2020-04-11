@@ -7,11 +7,11 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     replaces = [
-        (b'resources', '0001_initial'),
-        (b'resources', '0002_auto_20141210_1424'),
-        (b'resources', '0003_auto_20141210_1516'),
-        (b'resources', '0004_auto_20141213_1443'),
-        (b'resources', '0005_remove_transport_pilots')
+        ('resources', '0001_initial'),
+        ('resources', '0002_auto_20141210_1424'),
+        ('resources', '0003_auto_20141210_1516'),
+        ('resources', '0004_auto_20141213_1443'),
+        ('resources', '0005_remove_transport_pilots')
     ]
 
     dependencies = [
@@ -117,7 +117,7 @@ class Migration(migrations.Migration):
                     on_delete=models.CASCADE)
                  ),
                 ('people', models.ManyToManyField(
-                    related_name='species', to=b'resources.People')),
+                    related_name='species', to='resources.People')),
             ],
             options={
                 'abstract': False,
@@ -203,49 +203,49 @@ class Migration(migrations.Migration):
             model_name='film',
             name='characters',
             field=models.ManyToManyField(
-                related_name='films', to=b'resources.People', blank=True),
+                related_name='films', to='resources.People', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='film',
             name='planets',
             field=models.ManyToManyField(
-                related_name='films', to=b'resources.Planet', blank=True),
+                related_name='films', to='resources.Planet', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='film',
             name='species',
             field=models.ManyToManyField(
-                related_name='films', to=b'resources.Species', blank=True),
+                related_name='films', to='resources.Species', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='film',
             name='starships',
             field=models.ManyToManyField(
-                related_name='films', to=b'resources.Starship', blank=True),
+                related_name='films', to='resources.Starship', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='film',
             name='vehicles',
             field=models.ManyToManyField(
-                related_name='films', to=b'resources.Vehicle', blank=True),
+                related_name='films', to='resources.Vehicle', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='starship',
             name='new_pilots',
             field=models.ManyToManyField(
-                related_name='starships', to=b'resources.People', blank=True),
+                related_name='starships', to='resources.People', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='vehicle',
             name='new_pilots',
             field=models.ManyToManyField(
-                related_name='vehicles', to=b'resources.People', blank=True),
+                related_name='vehicles', to='resources.People', blank=True),
             preserve_default=True,
         ),
         migrations.AlterField(
