@@ -95,14 +95,6 @@ django-pylibmc = ">=0.6.1"
 
 [[package]]
 category = "main"
-description = "JSONField for django models"
-name = "django-jsonfield"
-optional = false
-python-versions = "*"
-version = "1.0.1"
-
-[[package]]
-category = "main"
 description = "a Django app that provides template tags for using Markdown (using the python-markdown2 processor)"
 name = "django-markdown-deux"
 optional = false
@@ -368,7 +360,7 @@ version = "5.0.1"
 brotli = ["brotli"]
 
 [metadata]
-content-hash = "0d0c57fc53da1d83f365ad8fd25777c81dbb796b00f1b3dd824629977beed0c6"
+content-hash = "00570bf9f90abd211e40b48d4c51abaeb3cacab5a5b770c6153c0dee8dea68b5"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -405,9 +397,6 @@ django-cors-headers = [
 django-heroku-memcacheify = [
     {file = "django-heroku-memcacheify-1.0.0.tar.gz", hash = "sha256:76811edb1521bd22b2bf8147afc47685ec8317adf2f7e5f4feccb975409883a1"},
     {file = "django_heroku_memcacheify-1.0.0-py2.py3-none-any.whl", hash = "sha256:971c63f9af5bee2884bbfd308457b6675b35b89a33cf42c1c4f0a554c324a563"},
-]
-django-jsonfield = [
-    {file = "django-jsonfield-1.0.1.tar.gz", hash = "sha256:6c0afd5554739365b55d86e285cf966cc3a45682fff963463364ea1f6511ca3e"},
 ]
 django-markdown-deux = [
     {file = "django-markdown-deux-1.0.5.zip", hash = "sha256:5b4a3cd9454af5b4cec0e19151b41d98d09400ddae0688afb81dbf62a4edafff"},
