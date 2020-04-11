@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.humanize',
     'django.contrib.staticfiles',
+    'django.contrib.messages',
 ) + CUSTOM_APPS
 
 MIDDLEWARE = (
