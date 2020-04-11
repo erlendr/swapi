@@ -110,10 +110,10 @@ description = "Django model mixins and utilities"
 name = "django-model-utils"
 optional = false
 python-versions = "*"
-version = "3.1.2"
+version = "3.2.0"
 
 [package.dependencies]
-Django = ">=1.8"
+Django = ">=1.11"
 
 [[package]]
 category = "main"
@@ -360,7 +360,7 @@ version = "5.0.1"
 brotli = ["brotli"]
 
 [metadata]
-content-hash = "00570bf9f90abd211e40b48d4c51abaeb3cacab5a5b770c6153c0dee8dea68b5"
+content-hash = "2012da69cd241f9a16ae6418dbe43f49abd3ca14c65eec1b7bbc7d3740fa6f32"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -402,8 +402,8 @@ django-markdown-deux = [
     {file = "django-markdown-deux-1.0.5.zip", hash = "sha256:5b4a3cd9454af5b4cec0e19151b41d98d09400ddae0688afb81dbf62a4edafff"},
 ]
 django-model-utils = [
-    {file = "django-model-utils-3.1.2.tar.gz", hash = "sha256:2c057f3bf0859aba27f04389f0cedd2d48f8c9b3848acb86fd9970794e58f477"},
-    {file = "django_model_utils-3.1.2-py2.py3-none-any.whl", hash = "sha256:8cd377744aa45f9f131d652ec460c57d1aaa88d3e9b586c8e27eb709341b9084"},
+    {file = "django-model-utils-3.2.0.tar.gz", hash = "sha256:682f58c1de330cedcda58cc85d5232c5b47a9e2cb67bef4541fb43fdaeb18e96"},
+    {file = "django_model_utils-3.2.0-py2.py3-none-any.whl", hash = "sha256:3f130a262e45d73e0950d2be76af4bf4ee86804dd60e5f90afc5cd948fcfe760"},
 ]
 django-postgrespool = [
     {file = "django-postgrespool-0.3.0.tar.gz", hash = "sha256:7622a56a5652bb6dee1a279e7e2ec4b18efcb5670e4cc17c57f87040984a2e8c"},
