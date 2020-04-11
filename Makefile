@@ -58,8 +58,7 @@ drop_db:
 	poetry run python manage.py flush
 
 test:
-	poetry run python manage.py test
-
+	poetry run python -Wa manage.py test
 
 clear_cache:
 	poetry run python manage.py clear_cache
