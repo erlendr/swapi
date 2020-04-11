@@ -80,7 +80,7 @@ USE_TZ = True
 if not DEBUG:
     DATABASES['default'] = dj_database_url.config()
 
-    DATABASES['default']['ENGINE'] = 'django_postgrespool'
+    DATABASES['default']['ENGINE'] = 'django_postgrespool2'
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
