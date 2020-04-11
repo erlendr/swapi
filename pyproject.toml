@@ -8,8 +8,8 @@ authors = [
 
 [tool.poetry.dependencies]
 python = "^3.7"
-dj-database-url = "0.5.0"
-django-braces = "1.13.0"
+dj-database-url = "^0.5.0"
+django-braces = "^1.14.0"
 django-clear-cache = "0.3"
 django-cors-headers = "2.4.1"
 django-heroku-memcacheify = "^1.0.0"
