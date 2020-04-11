@@ -76,8 +76,11 @@ category = "main"
 description = "django-cors-headers is a Django application for handling the server headers required for Cross-Origin Resource Sharing (CORS)."
 name = "django-cors-headers"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "2.4.1"
+python-versions = ">=3.5"
+version = "3.2.1"
+
+[package.dependencies]
+Django = ">=1.11"
 
 [[package]]
 category = "main"
@@ -365,7 +368,7 @@ version = "5.0.1"
 brotli = ["brotli"]
 
 [metadata]
-content-hash = "1c2bc65c3497390ed38f492a5672e2671a06d84833e75b697ba0e7b6fe2e6810"
+content-hash = "0d0c57fc53da1d83f365ad8fd25777c81dbb796b00f1b3dd824629977beed0c6"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -396,8 +399,8 @@ django-clear-cache = [
     {file = "django-clear-cache-0.3.tar.gz", hash = "sha256:fc9d27d6d7dd143917393484236bdf66a109d99bc64a4418cdf5a1127356d766"},
 ]
 django-cors-headers = [
-    {file = "django-cors-headers-2.4.1.tar.gz", hash = "sha256:8f94f96d2cdfa46360c62b892daae42477591997686ebf36c4f1cd9015528d22"},
-    {file = "django_cors_headers-2.4.1-py2.py3-none-any.whl", hash = "sha256:ff46a244965bddd71070bb71c2f0e27ceae2d73c52db5d4ffa09ecc51d47548e"},
+    {file = "django-cors-headers-3.2.1.tar.gz", hash = "sha256:a5960addecc04527ab26617e51b8ed42f0adab4594b24bb0f3c33e2bd3857c3f"},
+    {file = "django_cors_headers-3.2.1-py3-none-any.whl", hash = "sha256:a785b5f446f6635810776d9f5f5d23e6a2a2f728ea982648370afaf0dfdf2627"},
 ]
 django-heroku-memcacheify = [
     {file = "django-heroku-memcacheify-1.0.0.tar.gz", hash = "sha256:76811edb1521bd22b2bf8147afc47685ec8317adf2f7e5f4feccb975409883a1"},
