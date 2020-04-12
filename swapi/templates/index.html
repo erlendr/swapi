@@ -1,36 +1,39 @@
 {% extends 'base.html' %}
 {% load humanize %}
 {% block mainbody %}
-      <div class="row">
-        <div class="col-lg-3">
-        </div>
-        <div class="col-lg-6 center">
-          <p>All the Star Wars data you've ever wanted:</p>
-          <p><b>Planets, Spaceships, Vehicles, People, Films and Species</b></p>
-          <p>From all <b>SEVEN</b> Star Wars films</p>
-          <p><h4>Now with The Force Awakens data!</h4></p>
-        </div>
-        <div class="col-lg-3">
-        </div>
-
-      </div>
 <div class="row">
-          <hr>
+  <div class="col-lg-6 text-center">
+    <p>All the Star Wars data you've ever wanted:</p>
+    <p>
+      <strong>Planets, Spaceships, Vehicles, People, Films and Species</strong>
+    </p>
+    <p>From all <strong>SEVEN</strong> Star Wars films</p>
+    <h4>Now with The Force Awakens data!</h4>
+  </div>
+</div>
+<div class="row mt-5">
     <div class="col-sm-2 col-lg-2 col-md-2">
     </div>
     <div class="col-lg-8 col-md-8 col-sm-8">
-      <h1 class="center">
+        <h1 class="text-center">
             Try it now!
         </h1>
-        <div class="input-group">
-              <span class="input-group-addon">https://swapi.co/api/</span>
-              <input id="interactive" type="text" class="form-control" placeholder="people/1/">
-              <span class="input-group-btn"><button onClick="interactive_call();return false;" class="btn btn-primary">request</button></span>
-            </div>
-        <small>Need a hint? try <a href="#" onClick="update('people/1/');return false;"><i>people/1/</i></a> or <a href="#" onClick="update('planets/3/');return false;"><i>planets/3/</i></a> or <a href="#" onClick="update('starships/9/');return false;"><i>starships/9/</i></a></small>
-        <p class="lead pad_top">Result:</p>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3">https://swapi.co/api/</span>
+          </div>
+          <input id="interactive" type="text" class="form-control" placeholder="people/1/">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick="interactive_call();return false;">request</button>
+          </div>
+        </div>
+        <p>
+          <small>Need a hint? try <a href="#" onClick="update('people/1/');return false;"><em>people/1/</i></a> or <a href="#" onClick="update('planets/3/');return false;"><i>planets/3/</i></a> or <a href="#" onClick="update('starships/9/');return false;"><i>starships/9/</i></a></small>
+        </p>
+        <p class="lead">Result:</p>
         <div class="well">
           <pre id="interactive_output" class="pre-scrollable">
+            <code>
 {
 	"name": "Luke Skywalker",
 	"height": "172",
@@ -63,13 +66,14 @@
 	"edited": "2014-12-20T21:17:56.891000Z",
 	"url": "https://swapi.co/api/people/1/"
 }
+            </code>
           </pre>
         </div>
     </div>
     <div class="col-sm-2 col-lg-2 col-md-2">
     </div>
 </div>
-<div class="row pad_bot">
+<div class="row mt-5 pad_bot">
         <div class="col-sm-1 col-lg-1 col-md-1">
         </div>
         <div class="col-sm-3 col-lg-3 col-md-3">
