@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% load humanize %}
 {% block mainbody %}
-<div class="row">
-  <div class="col-lg-6 text-center">
+<div class="row justify-content-center">
+  <div class="col-lg-10 col-md-10 col-sm-10 text-center">
     <p>All the Star Wars data you've ever wanted:</p>
     <p>
       <strong>Planets, Spaceships, Vehicles, People, Films and Species</strong>
@@ -11,10 +11,8 @@
     <h5>Now with The Force Awakens data!</h5>
   </div>
 </div>
-<div class="row mt-5">
-    <div class="col-sm-2 col-lg-2 col-md-2">
-    </div>
-    <div class="col-lg-8 col-md-8 col-sm-8">
+<div class="row justify-content-center mt-5">
+    <div class="col-lg-10 col-md-10 col-sm-10">
         <h1 class="text-center">
             Try it now!
         </h1>
@@ -131,5 +129,5 @@
             $('#interactive_output').text(JSON.stringify(data, null, '\t'));
         });
     }
-    </script>
+  </script>
 {% endblock scripts %}
