@@ -15,7 +15,7 @@ Let's make our first API request to the Star Wars API!
 
 Open up a terminal and use [curl](http://curl.haxx.se) or [httpie](http://httpie.org) to make an API request for a resource. In the example below, we're trying to get the first planet, Tatooine:
 
-    http swapi.co/api/planets/1/
+    https://swapi.co/api/planets/1/
 
 We'll use [httpie](http://httpie.org) for our examples as it displays responses nicely and gives us a whole lot more useful information. If you don't want to download httpie, just use the *curl* command instead.
 
@@ -111,7 +111,7 @@ The Root resource provides information on all available resources within the API
 
 **Example request:**
 
-    http https://swapi.co/api/
+    https://swapi.co/api/
 
 **Example response:**
 
@@ -156,7 +156,7 @@ A People resource is an individual person or character within the Star Wars univ
 
 **Example request:**
 
-    http https://swapi.co/api/people/1/
+    https://swapi.co/api/people/1/
 
 **Example response:**
 
@@ -245,7 +245,7 @@ A Film resource is a single film.
 
 **Example request:**
 
-    http https://swapi.co/api/films/1/
+    https://swapi.co/api/films/1/
 
 **Example response:**
 
@@ -332,7 +332,7 @@ A Starship resource is a single transport craft that has hyperdrive capability.
 
 **Example request:**
 
-    http https://swapi.co/api/starships/9/
+    https://swapi.co/api/starships/9/
 
 **Example response:**
 
@@ -419,7 +419,7 @@ A Vehicle resource is a single transport craft that **does not have** hyperdrive
 
 **Example request:**
 
-    http https://swapi.co/api/vehicles/4/
+    https://swapi.co/api/vehicles/4/
 
 **Example response:**
 
@@ -501,7 +501,7 @@ A Species resource is a type of person or character within the Star Wars Univers
 
 **Example request:**
 
-    http https://swapi.co/api/species/3/
+    https://swapi.co/api/species/3/
 
 **Example response:**
 
@@ -582,7 +582,7 @@ A Planet resource is a large mass, planet or planetoid in the Star Wars Universe
 
 **Example request:**
 
-    http https://swapi.co/api/planets/1/
+    https://swapi.co/api/planets/1/
 
 **Example response:**
 
