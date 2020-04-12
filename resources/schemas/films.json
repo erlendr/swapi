@@ -4,6 +4,10 @@
   "description": "A Star Wars film",
   "type": "object",
   "properties": {
+    "id": {
+      "type": "string",
+      "description": "The id of this resource."
+    },
     "title": {
       "type": "string",
       "description": "The title of this film."

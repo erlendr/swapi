@@ -4,6 +4,10 @@
   "description": "A species within the Star Wars universe",
   "type": "object",
   "properties": {
+    "id": {
+      "type": "string",
+      "description": "The id of this resource."
+    },
     "name": {
       "type": "string",
       "description": "The name of this species."

@@ -22,6 +22,7 @@ class PeopleSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = People
         fields = (
+            "id",
             "name",
             "height",
             "mass",
@@ -46,6 +47,7 @@ class PlanetSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Planet
         fields = (
+            "id",
             "name",
             "rotation_period",
             "orbital_period",
@@ -68,6 +70,7 @@ class FilmSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Film
         fields = (
+            "id",
             "title",
             "episode_id",
             "opening_crawl",
@@ -95,6 +98,7 @@ class SpeciesSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Species
         fields = (
+            "id",
             "name",
             "classification",
             "designation",
@@ -124,6 +128,7 @@ class VehicleSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Vehicle
         fields = (
+            "id",
             "name",
             "model",
             "manufacturer",
@@ -154,6 +159,7 @@ class StarshipSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Starship
         fields = (
+            "id",
             "name",
             "model",
             "manufacturer",

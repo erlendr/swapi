@@ -4,6 +4,10 @@
   "description": "A planet.",
   "type": "object",
   "properties": {
+    "id": {
+      "type": "string",
+      "description": "The id of this resource."
+    },
     "name": {
       "type": "string",
       "description": "The name of this planet."
@@ -65,19 +69,19 @@
     }
   },
   "required": [
-      "name",
-      "rotation_period",
-      "orbital_period",
-      "diameter",
-      "climate",
-      "gravity",
-      "terrain",
-      "surface_water",
-      "population",
-      "residents",
-      "films",
-      "created",
-      "edited",
-      "url"
+    "name",
+    "rotation_period",
+    "orbital_period",
+    "diameter",
+    "climate",
+    "gravity",
+    "terrain",
+    "surface_water",
+    "population",
+    "residents",
+    "films",
+    "created",
+    "edited",
+    "url"
   ]
 }

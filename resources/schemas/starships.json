@@ -4,6 +4,10 @@
   "description": "A Starship",
   "type": "object",
   "properties": {
+    "id": {
+      "type": "string",
+      "description": "The id of this resource."
+    },
     "name": {
       "type": "string",
       "description": "The name of this starship. The common name, such as Death Star."
@@ -28,7 +32,7 @@
       "type": "string",
       "description": "The length of this starship in meters."
     },
-    "crew":{
+    "crew": {
       "type": "string",
       "description": "The number of personnel needed to run or pilot this starship."
     },
@@ -40,7 +44,7 @@
       "type": "string",
       "description": "The maximum speed of this starship in atmosphere. n/a if this starship is incapable of atmosphering flight."
     },
-    "hyperdrive_rating" : {
+    "hyperdrive_rating": {
       "type": "string",
       "description": "The class of this starships hyperdrive."
     },
