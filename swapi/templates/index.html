@@ -8,7 +8,7 @@
       <strong>Planets, Spaceships, Vehicles, People, Films and Species</strong>
     </p>
     <p>From all <strong>SEVEN</strong> Star Wars films</p>
-    <h4>Now with The Force Awakens data!</h4>
+    <h5>Now with The Force Awakens data!</h5>
   </div>
 </div>
 <div class="row mt-5">
@@ -24,7 +24,7 @@
           </div>
           <input id="interactive" type="text" class="form-control" placeholder="people/1/">
           <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick="interactive_call();return false;">request</button>
+            <button class="btn btn-primary" type="button" id="button-addon2" onClick="interactive_call();return false;">request</button>
           </div>
         </div>
         <p>
@@ -71,38 +71,38 @@
         </div>
     </div>
 </div>
-<div class="row mt-5 pad_bot">
-        <div class="col-sm-1 col-lg-1 col-md-1">
-        </div>
-        <div class="col-sm-3 col-lg-3 col-md-3">
-          <h4 class="center">What is this?</h4>
-          <p>The Star Wars API, or "swapi" (Swah-pee) is the world's first quantified and programmatically-accessible data source for all the data from the Star Wars canon universe!</p>
-          <p>We've taken all the rich contextual stuff from the universe and formatted into something easier to consume with software. Then we went and stuck an API on the front so you can access it all!</p>
-        </div>
-        <div class="col-sm-4 col-lg-4 col-md-4">
-          <h4 class="center">How can I use it?</h4>
-          <p>All the data is accessible through our HTTP web API. Consult our <a href="/documentation">documentation</a> if you'd like to get started.</p>
-          <p>Helper libraries for popular programming languages are also provided so you can consume swapi in your favourite programming language, in a style that suits you.</p>
-        </div>
-        <div class="col-sm-3 col-lg-3 col-md-3">
-          <h4 class="center">How can I support this?</h4>
-          <p>With small donations we can keep swapi running for free, please consider throwing us some beer money to say thank you. With every $10 we can keep the site up for another month!</p>
-<p><form action="/stripe/donation" method="POST">
-          <script
-            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="{{stripe_key}}"
-            data-image="https://i.imgur.com/PqkJzx4s.png"
-            data-name="swapi.co"
-            data-description="Donate and keep swapi alive!"
-            data-amount="1000"
-            data-panel-label="Donate">
-          </script>
-        </form></p>
-        <p>This project is open source and you can contribute <a href="https://github.com/phalt/swapi">on GitHub</a>.</p>
-        </div>
-        <div class="col-sm-1 col-lg-1 col-md-1">
-        </div>
-      </div>
+<div class="row mt-5 pb-4">
+  <div class="col-sm-1 col-lg-1 col-md-1">
+  </div>
+  <div class="col-sm-3 col-lg-3 col-md-3">
+    <h5 class="text-center">What is this?</h5>
+    <p>The Star Wars API, or "swapi" (Swah-pee) is the world's first quantified and programmatically-accessible data source for all the data from the Star Wars canon universe!</p>
+    <p>We've taken all the rich contextual stuff from the universe and formatted into something easier to consume with software. Then we went and stuck an API on the front so you can access it all!</p>
+  </div>
+  <div class="col-sm-4 col-lg-4 col-md-4">
+    <h5 class="text-center">How can I use it?</h5>
+    <p>All the data is accessible through our HTTP web API. Consult our <a href="/documentation">documentation</a> if you'd like to get started.</p>
+    <p>Helper libraries for popular programming languages are also provided so you can consume swapi in your favourite programming language, in a style that suits you.</p>
+  </div>
+  <div class="col-sm-3 col-lg-3 col-md-3">
+    <h5 class="text-center">How can I support this?</h5>
+    <p>With small donations we can keep swapi running for free, please consider throwing us some beer money to say thank you. With every $10 we can keep the site up for another month!</p>
+    <p>
+      <form action="/stripe/donation" method="POST">
+     <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="{{stripe_key}}"
+        data-image="https://i.imgur.com/PqkJzx4s.png"
+        data-name="swapi.co"
+        data-description="Donate and keep swapi alive!"
+        data-amount="1000"
+        data-panel-label="Donate">
+      </script>
+    </form>
+    </p>
+    <p>This project is open source and you can contribute <a href="https://github.com/phalt/swapi">on GitHub</a>.</p>
+  </div>
+</div>
       <hr>
 {% endblock mainbody %}
 {% block scripts %}
