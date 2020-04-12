@@ -1,50 +1,50 @@
 {% extends 'base.html' %}
 {% block mainbody %}
 <div class="row">
-<div class="col-sm-3 col-md-3">
-    <h5>Getting started</h5>
-    <ul class="list-group">
-        <li class="list-group-item"><a href="#intro">Introduction</a></li>
-        <li class="list-group-item"><a href="#start">Getting started</a></li>
-        <li class="list-group-item"><a href="#base">Base URL</a></li>
-        <li class="list-group-item"><a href="#rate">Rate limiting</a></li>
-        <li class="list-group-item"><a href="#auth">Authentication</a></li>
-        <li class="list-group-item"><a href="#schema">JSON Schema</a></li>
-        <li class="list-group-item"><a href="#search">Searching</a></li>
+<div class="col-sm-4 col-md-4">
+    <h6>Getting started</h6>
+    <ul class="list-group mb-4">
+      <a href="#intro" class="list-group-item list-group-item-action">Introduction</a>
+      <a href="#start" class="list-group-item list-group-item-action">Getting started</a>
+      <a href="#base" class="list-group-item list-group-item-action">Base URL</a>
+      <a href="#rate" class="list-group-item list-group-item-action">Rate limiting</a>
+      <a href="#auth" class="list-group-item list-group-item-action">Authentication</a>
+      <a href="#schema" class="list-group-item list-group-item-action">JSON Schema</a>
+      <a href="#search" class="list-group-item list-group-item-action">Searching</a>
     </ul>
-    <h5>Encodings</h5>
-    <ul class="list-group">
-        <li class="list-group-item"><a href="#json">JSON</li>
-        <li class="list-group-item"><a href="#wookiee">Wookiee</li>
+    <h6>Encodings</h6>
+    <ul class="list-group mb-4">
+        <a href="#json" class="list-group-item list-group-item-action">JSON</a>
+        <a href="#wookiee" class="list-group-item list-group-item-action">Wookiee</a>
     </ul>
-    <h5>Resources</h5>
-    <ul class="list-group">
-        <li class="list-group-item"><a href="#root">Root</a></li>
-        <li class="list-group-item"><a href="#people">People</a></li>
-        <li class="list-group-item"><a href="#films">Films</a></li>
-        <li class="list-group-item"><a href="#starships">Starships</a></li>
-        <li class="list-group-item"><a href="#vehicles">Vehicles</a></li>
-        <li class="list-group-item"><a href="#species">Species</a></li>
-        <li class="list-group-item"><a href="#planets">Planets</a></li>
+    <h6>Resources</h6>
+    <ul class="list-group mb-4">
+        <a href="#root" class="list-group-item list-group-item-action">Root</a></a>
+        <a href="#people" class="list-group-item list-group-item-action">People</a></a>
+        <a href="#films" class="list-group-item list-group-item-action">Films</a></a>
+        <a href="#starships" class="list-group-item list-group-item-action">Starships</a></a>
+        <a href="#vehicles" class="list-group-item list-group-item-action">Vehicles</a></a>
+        <a href="#species" class="list-group-item list-group-item-action">Species</a></a>
+        <a href="#planets" class="list-group-item list-group-item-action">Planets</a></a>
     </ul>
-    <h5>Helper libraries</h5>
-    <ul class="list-group">
-        <li class="list-group-item"><a href="#python">Python</a></li>
-        <li class="list-group-item"><a href="#javascript">Javascript</a></li>
-        <li class="list-group-item"><a href="#android">Android</a></li>
-        <li class="list-group-item"><a href="#java">Java</a></li>
-        <li class="list-group-item"><a href="#golang">Go</a></li>
-        <li class="list-group-item"><a href="#ruby">Ruby</a></li>
-        <li class="list-group-item"><a href="#csharp">C#</a></li>
-        <li class="list-group-item"><a href="#objc">Objective C</a></li>
-        <li class="list-group-item"><a href="#angular">Angular</a></li>
-        <li class="list-group-item"><a href="#angular2">Angular 2</a></li>
-        <li class="list-group-item"><a href="#r">R</a></li>
-        <li class="list-group-item"><a href="#fsharp">F#</a></li>
-        <li class="list-group-item"><a href="#elixir">Elixir</a></li>
+    <h6>Helper libraries</h6>
+    <ul class="list-group mb-4">
+        <a href="#python" class="list-group-item list-group-item-action">Python</a></a>
+        <a href="#javascript" class="list-group-item list-group-item-action">Javascript</a></a>
+        <a href="#android" class="list-group-item list-group-item-action">Android</a></a>
+        <a href="#java" class="list-group-item list-group-item-action">Java</a></a>
+        <a href="#golang" class="list-group-item list-group-item-action">Go</a></a>
+        <a href="#ruby" class="list-group-item list-group-item-action">Ruby</a></a>
+        <a href="#csharp" class="list-group-item list-group-item-action">C#</a></a>
+        <a href="#objc" class="list-group-item list-group-item-action">Objective C</a></a>
+        <a href="#angular" class="list-group-item list-group-item-action">Angular</a></a>
+        <a href="#angular2" class="list-group-item list-group-item-action">Angular 2</a></a>
+        <a href="#r" class="list-group-item list-group-item-action">R</a></a>
+        <a href="#fsharp" class="list-group-item list-group-item-action">F#</a></a>
+        <a href="#elixir" class="list-group-item list-group-item-action">Elixir</a></a>
     </ul>
 </div>
-<div class="col-md-9 col-sm-9">
+<div class="col-md-8 col-sm-8">
 {% load markdown_deux_tags %}
 {% markdown %}
     {% include "docs.md" %}
