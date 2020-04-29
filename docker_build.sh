@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build --tag swapi:1.0 .
+docker build --tag erlendr/swapi:1.0 .
