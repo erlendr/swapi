@@ -15,6 +15,4 @@ RUN make docker_build
 RUN make docker_load_data
 COPY . /app/
 
-EXPOSE 8000
-
-CMD ["gunicorn", "--bind=0.0.0.0", "swapi.wsgi", "--log-file", "-"]
+CMD ["gunicorn", "--bind=0.0.0.0:80", "swapi.wsgi", "--log-file", "-"]
