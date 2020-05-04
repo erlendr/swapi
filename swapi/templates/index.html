@@ -1,6 +1,4 @@
-{% extends 'base.html' %}
-{% load humanize %}
-{% block mainbody %}
+{% extends 'base.html' %} {% load humanize %} {% block mainbody %}
 <div class="row justify-content-center">
   <div class="col-lg-10 col-md-10 col-sm-10 text-center">
     <p>All the Star Wars data you've ever wanted:</p>
@@ -12,26 +10,53 @@
   </div>
 </div>
 <div class="row justify-content-center mt-5">
-    <div class="col-lg-10 col-md-10 col-sm-10">
-        <h1 class="text-center">
-            Try it now!
-        </h1>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon3">http://swapi.westeurope.azurecontainer.io/api/</span>
-          </div>
-          <input id="interactive" type="text" class="form-control" placeholder="people/1/">
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="button" id="button-addon2" onClick="interactive_call();return false;">request</button>
-          </div>
-        </div>
-        <p>
-          <small>Need a hint? try <a href="#" onClick="update('people/1/');return false;"><em>people/1/</em></a> or <a href="#" onClick="update('planets/3/');return false;"><em>planets/3/</em></a> or <a href="#" onClick="update('starships/9/');return false;"><em>starships/9/</em></a></small>
-        </p>
-        <p class="lead">Result:</p>
-        <div class="card bg-dark">
-          <div class="card-body">
-            <pre id="interactive_output" class="pre-scrollable">
+  <div class="col-lg-10 col-md-10 col-sm-10">
+    <h1 class="text-center">
+      Try it now!
+    </h1>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon3"
+          >https://spv-swapi.herokuapp.com/api/</span
+        >
+      </div>
+      <input
+        id="interactive"
+        type="text"
+        class="form-control"
+        placeholder="people/1/"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-primary"
+          type="button"
+          id="button-addon2"
+          onClick="interactive_call();return false;"
+        >
+          request
+        </button>
+      </div>
+    </div>
+    <p>
+      <small
+        >Need a hint? try
+        <a href="#" onClick="update('people/1/');return false;"
+          ><em>people/1/</em></a
+        >
+        or
+        <a href="#" onClick="update('planets/3/');return false;"
+          ><em>planets/3/</em></a
+        >
+        or
+        <a href="#" onClick="update('starships/9/');return false;"
+          ><em>starships/9/</em></a
+        ></small
+      >
+    </p>
+    <p class="lead">Result:</p>
+    <div class="card bg-dark">
+      <div class="card-body">
+        <pre id="interactive_output" class="pre-scrollable">
 <code>{
 	"name": "Luke Skywalker",
 	"height": "172",
@@ -41,75 +66,88 @@
 	"eye_color": "blue",
 	"birth_year": "19BBY",
 	"gender": "male",
-	"homeworld": "http://swapi.westeurope.azurecontainer.io/api/planets/1/",
+	"homeworld": "https://spv-swapi.herokuapp.com/api/planets/1/",
 	"films": [
-		"http://swapi.westeurope.azurecontainer.io/api/films/2/",
-		"http://swapi.westeurope.azurecontainer.io/api/films/6/",
-		"http://swapi.westeurope.azurecontainer.io/api/films/3/",
-		"http://swapi.westeurope.azurecontainer.io/api/films/1/",
-		"http://swapi.westeurope.azurecontainer.io/api/films/7/"
+		"https://spv-swapi.herokuapp.com/api/films/2/",
+		"https://spv-swapi.herokuapp.com/api/films/6/",
+		"https://spv-swapi.herokuapp.com/api/films/3/",
+		"https://spv-swapi.herokuapp.com/api/films/1/",
+		"https://spv-swapi.herokuapp.com/api/films/7/"
 	],
 	"species": [
-		"http://swapi.westeurope.azurecontainer.io/api/species/1/"
+		"https://spv-swapi.herokuapp.com/api/species/1/"
 	],
 	"vehicles": [
-		"http://swapi.westeurope.azurecontainer.io/api/vehicles/14/",
-		"http://swapi.westeurope.azurecontainer.io/api/vehicles/30/"
+		"https://spv-swapi.herokuapp.com/api/vehicles/14/",
+		"https://spv-swapi.herokuapp.com/api/vehicles/30/"
 	],
 	"starships": [
-		"http://swapi.westeurope.azurecontainer.io/api/starships/12/",
-		"http://swapi.westeurope.azurecontainer.io/api/starships/22/"
+		"https://spv-swapi.herokuapp.com/api/starships/12/",
+		"https://spv-swapi.herokuapp.com/api/starships/22/"
 	],
 	"created": "2014-12-09T13:50:51.644000Z",
 	"edited": "2014-12-20T21:17:56.891000Z",
-	"url": "http://swapi.westeurope.azurecontainer.io/api/people/1/"
+	"url": "https://spv-swapi.herokuapp.com/api/people/1/"
 }</code>
             </pre>
-          </div>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="row mt-5 pb-4">
-  <div class="col-sm-1 col-lg-1 col-md-1">
-  </div>
+  <div class="col-sm-1 col-lg-1 col-md-1"></div>
   <div class="col-sm-3 col-lg-3 col-md-3">
     <h5 class="text-center">What is this?</h5>
-    <p>The Star Wars API, or "swapi" (Swah-pee) is the world's first quantified and programmatically-accessible data source for all the data from the Star Wars canon universe!</p>
-    <p>We've taken all the rich contextual stuff from the universe and formatted into something easier to consume with software. Then we went and stuck an API on the front so you can access it all!</p>
+    <p>
+      The Star Wars API, or "swapi" (Swah-pee) is the world's first quantified
+      and programmatically-accessible data source for all the data from the Star
+      Wars canon universe!
+    </p>
+    <p>
+      We've taken all the rich contextual stuff from the universe and formatted
+      into something easier to consume with software. Then we went and stuck an
+      API on the front so you can access it all!
+    </p>
   </div>
   <div class="col-sm-4 col-lg-4 col-md-4">
     <h5 class="text-center">How can I use it?</h5>
-    <p>All the data is accessible through our HTTP web API. Consult our <a href="/documentation">documentation</a> if you'd like to get started.</p>
-    <p>Helper libraries for popular programming languages are also provided so you can consume swapi in your favourite programming language, in a style that suits you.</p>
+    <p>
+      All the data is accessible through our HTTP web API. Consult our
+      <a href="/documentation">documentation</a> if you'd like to get started.
+    </p>
+    <p>
+      Helper libraries for popular programming languages are also provided so
+      you can consume swapi in your favourite programming language, in a style
+      that suits you.
+    </p>
   </div>
 </div>
-      <hr>
-{% endblock mainbody %}
-{% block scripts %}
+<hr />
+{% endblock mainbody %} {% block scripts %}
 <script>
-    function update(call){
-        $('#interactive').val(call);
-        interactive_call();
-    }
+  function update(call) {
+    $("#interactive").val(call);
+    interactive_call();
+  }
 
-    function interactive_call(){
-        var content = $('#interactive').val()
-        if(content == ''){
-            content = 'people/1/';
-        }
-        var call_url = 'api/' + content;
-
-        $.ajax({
-          dataType: 'json',
-          url: call_url,
-          context: document.body
-        })
-        .fail(function(jqXHR, textStatus, errorThrown) {
-          $('#interactive_output').text(textStatus + ' ' + errorThrown);
-        })
-        .done(function(data) {
-            $('#interactive_output').text(JSON.stringify(data, null, '\t'));
-        });
+  function interactive_call() {
+    var content = $("#interactive").val();
+    if (content == "") {
+      content = "people/1/";
     }
-  </script>
+    var call_url = "api/" + content;
+
+    $.ajax({
+      dataType: "json",
+      url: call_url,
+      context: document.body,
+    })
+      .fail(function (jqXHR, textStatus, errorThrown) {
+        $("#interactive_output").text(textStatus + " " + errorThrown);
+      })
+      .done(function (data) {
+        $("#interactive_output").text(JSON.stringify(data, null, "\t"));
+      });
+  }
+</script>
 {% endblock scripts %}
